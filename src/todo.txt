@@ -1,0 +1,2 @@
+-do massive code clean up and change class and id of things that no longer work due to major reworking
+-focus on styling and making it look nice -> make it look like a real app
