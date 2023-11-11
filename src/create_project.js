@@ -1,4 +1,8 @@
+//this module is responsible for storing, creating, removing and editing projects and the associated todos
+
 const projects = (() => {
+
+    //stores projects and todos
     let project_array = [];
     //localStorage.clear();
     if (localStorage.getItem('projects') === null){

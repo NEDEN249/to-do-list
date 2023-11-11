@@ -16,6 +16,7 @@ function displayTodos(project){
     })
 }
 
+//removes child nodes when refreshing/reloading the display
 function removePreviousSelection(){
     let todos = document.getElementById("todo-container");
     let child = todos.lastElementChild;

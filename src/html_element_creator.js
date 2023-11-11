@@ -1,3 +1,5 @@
+//this module contains a function that creates HTML elements with an id and text content
+
 function createHTMLelement(type, id, content){
     const element = document.createElement(type); //creates a new element of type type 
     if (id){ //creates a new element with the id attribute if id is passed

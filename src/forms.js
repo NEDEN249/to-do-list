@@ -5,6 +5,8 @@ import { create_todo_object } from "./create_todo_object";
 import { projects } from "./create_project";
 import { createProjectDiv } from "./generate_project_div";
 
+//this modules contains all the forms used in the application
+
 function form(){
     const overlay = createHTMLelement('div', 'new-form', null);
     overlay.classList.add('overlay')

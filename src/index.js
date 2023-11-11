@@ -8,6 +8,8 @@ import { createProjectDiv } from "./generate_project_div.js";
 import { displayProjects, displayTodos } from "./display.js";
 import './style.css';
 
+//this is the main module through which the application runs from 
+
 const container = document.getElementById("container");
 //current_project is equal to the projects who is currently selected by the user
 let current_project = projects.project_array[0];

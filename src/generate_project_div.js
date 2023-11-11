@@ -19,6 +19,7 @@ function createProjectDiv(name){
     const individual_project_div = createHTMLelement('div', 'project-element-div', null);
     individual_project_div.appendChild(createHTMLelement('p', 'project-title', name));
 
+    //event listener for deleting project
     const del = individual_project_div.appendChild(createHTMLelement('a', 'project-delete', '🗑️'));
         del.addEventListener('click', (e) => {
             let index = projects.findProject(e.target.previousSibling.textContent);
@@ -32,6 +33,8 @@ function createProjectDiv(name){
         individual_project_div.appendChild(project_edit);
         project_div.appendChild(individual_project_div);
         project_edit.setAttribute('href', '#edit-project')    
+        
+        //event listener for edit button -> displays project edit form 
         project_edit.addEventListener('click', (e) => {
                 projects.project_array.forEach((project) => {
                     if (project.title === e.target.parentNode.firstChild.textContent){
